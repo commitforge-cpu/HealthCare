@@ -32,7 +32,7 @@ export default function Navbar() {
           <span className="text-lg font-bold text-brand-800">{siteConfig.name}</span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
@@ -53,7 +53,7 @@ export default function Navbar() {
 
         <Link
           href="/book-appointment"
-          className="hidden rounded-full bg-hero-gradient px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-105 md:inline-block"
+          className="hidden rounded-full bg-hero-gradient px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-105 lg:inline-block"
         >
           Book Appointment
         </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-brand-700 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full text-brand-700 lg:hidden"
         >
           <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
             {open ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
@@ -70,7 +70,7 @@ export default function Navbar() {
       </Container>
 
       {open && (
-        <div className="border-t border-brand-100 bg-white md:hidden">
+        <div className="border-t border-brand-100 bg-white lg:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {links.map((link) => (
               <Link

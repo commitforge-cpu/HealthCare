@@ -19,7 +19,7 @@ export default function AboutPage() {
         description="Getting to know the person guiding your recovery."
       />
 
-      <section className="py-16">
+      <section className="overflow-hidden py-16">
         <Container className="grid gap-12 md:grid-cols-2 md:items-center">
           <AboutIllustration />
 
